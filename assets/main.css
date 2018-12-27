@@ -25,10 +25,16 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  min-width: 960px;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background: url('img/clouds.jpg');
@@ -58,7 +64,7 @@ header .top {
   position: relative;
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   margin-bottom: 2px;
-  text-shadow: 1px 1px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
   line-height: 55px;
 }
 
@@ -133,6 +139,10 @@ main section .text > :first-child {
   margin-right: 20px;
 }
 
+main section .text > :last-child {
+  margin-right: 0;
+}
+
 main section .text figure img {
   height: 200px;
   width: 300px;
@@ -146,7 +156,7 @@ main section figure figcaption {
 
 .paralast {
   height: 200px;
-  background: url('images/para.jpg');
+  background: url('img/para.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -166,6 +176,10 @@ main section figure figcaption {
 footer {
   background: #007faa;
   color: rgba(255, 255, 255, 0.9);
+}
+
+footer .wrapper {
+  padding: 20px 40px;
 }
 
 footer nav {
