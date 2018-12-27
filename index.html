@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>My awesome cargo company</title>
     <base href="/" />
@@ -14,39 +14,55 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
     <link rel="icon" sizes="192x192" href="assets/icons/favicon.png" />
 
-    <link rel="manifest" href="assets/manifest.json">
+    <link rel="manifest" href="assets/manifest.json" />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet" />
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <img src="/assets/logo.png" />
+      <h1>International Cargo Company</h1>
+    </header>
 
-    <div class="header">
-        <img src="/assets/logo.png">
-        <h1>International Cargo Company</h1>
-    </div>
-    <div class="menu">
-        <div class="">Главная</div>
-        <div class="">О проекте</div>
-        <div class="">Каталог</div>
-        <div class="">Портфолио</div>
-        <div class="">Контакты</div>
-    </div>
+    <nav class="menu">
+      <a href="/" class="">Главная</a> <a href="/" class="">О проекте</a> <a href="/" class="">Каталог</a>
+      <a href="/" class="">Портфолио</a> <a href="/" class="">Контакты</a>
+    </nav>
 
-    <div class="content">
+    <main>
+      <section>
         <h2>Заголовок первого уровня</h2>
 
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
         </p>
 
         <figure>
-            <img src="/assets/truck-right.jpg" alt="Truck Right">
-            <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+          <img src="/assets/truck-right.jpg" alt="Truck Right" />
+          <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
         </figure>
+      </section>
 
-    </div>
+      <section>
+        <h2>Заголовок первого уровня 2</h2>
 
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
 
-
-</body>
+        <figure>
+          <img src="/assets/truck-right.jpg" alt="Truck Right" />
+          <figcaption>Fig.2 - Trulli, Puglia, Italy.</figcaption>
+        </figure>
+      </section>
+    </main>
+  </body>
 </html>
