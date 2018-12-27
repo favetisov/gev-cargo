@@ -45,7 +45,6 @@ main {
   flex: 1;
 }
 
-
 header .top {
   height: 398px;
   background: url("img/header.jpg");
@@ -137,21 +136,71 @@ main section figure figcaption {
     padding: 5px 0;
 }
 
+.paralast {
+  height: 200px;
+  margin: 40px;
+  background: url('images/para.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transform: translateZ(-1px) scale(1.1);
+}
+
+.paralast::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 127, 172, 0.61);
+
 footer {
   background: #007faa;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 footer nav {
   margin: 0 auto;
-  color: #fff;
   text-align: center;
 }
 
 footer nav a {
+  display: inline-block;
   padding: 10px;
-  margin: 0 10px;
-  color: #fff;
+  margin: 0 10px 20px;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+footer section .title {
+  text-transform: uppercase;
+}
+
+footer .info > div {
+  line-height: 20px;
+}
+
+footer .contacts {
+  text-align: right;
+}
+
+footer .ads {
+  display: inline-flex;
+}
+
+footer .ads img {
+  margin-left: 3px;
+}
+
+footer .copyrights {
+  align-items: flex-end;
 }
