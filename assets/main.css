@@ -1,22 +1,24 @@
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url('fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
+  src: local("Open Sans Light"), local("OpenSans-Light"),
+    url("fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
-  src: local('Open Sans'), local('OpenSans'), url('fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+  src: local("Open Sans"), local("OpenSans"),
+    url("fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 600;
-  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
-    url('fonts/Open_Sans/OpenSans-SemiBold.ttf') format('truetype');
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"),
+    url("fonts/Open_Sans/OpenSans-SemiBold.ttf") format("truetype");
 }
 
 * {
@@ -26,11 +28,12 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: url('img/clouds.jpg');
 }
 
 .wrapper {
@@ -40,6 +43,98 @@ body {
 
 main {
   flex: 1;
+}
+
+
+header .top {
+  height: 398px;
+  background: url("img/header.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+  margin-bottom: 2px;
+}
+header .top .logo {
+  height: 230px;
+  width: 308px;
+  position: absolute;
+  left: 90px;
+  top: 85px;
+}
+
+header .top h1 {
+  font-size: 48px;
+  color: white;
+  font-weight: 600;
+  width: 500px;
+  text-align: right;
+  margin-right: 90px;
+}
+
+header .menu .wrapper {
+    background: #007faa;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    opacity: .8;
+}
+header .menu .wrapper a {
+    flex: 1;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+    height: 46px;
+    line-height: 46px;
+    transition: color .2s;
+}
+
+header .menu .wrapper a:hover {
+    color: #a5e3ff;
+}
+
+main section {
+    height: 400px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    margin: 20px auto;
+    padding: 20px 40px;
+    background: white;
+}
+
+main section h2 {
+    color: #b21818;
+    font-size: 32px;
+    padding: 5px 0;
+}
+
+main section .text {
+    display: flex;
+    flex-direction: row;
+    color: rgba(0,0,0,.7);
+}
+
+
+main section .text p {
+    padding: 10px 0 ;
+    padding-top: 0;
+    text-align: justify;
+}
+
+main section .text figure {
+    padding: 0 10px;
+}
+
+main section .text figure img {
+    height: 200px;
+    width: 300px;
+}
+main section figure figcaption {
+    color: rgba(0,0,0,0.6);
+    text-align: center;
+    padding: 5px 0;
 }
 
 footer {
